@@ -12,7 +12,7 @@ Just use class as ict fsm.
 
 The fsm about SIP transaction:
 
-                           |INVITE from TU
+NVITE from TU
              Timer A fires     |INVITE sent
              Reset A,          V                      Timer B fires
              INVITE sent +-----------+                or Transport Err.
@@ -24,8 +24,8 @@ The fsm about SIP transaction:
                             |  |1xx                  |
     300-699 +---------------+  |1xx to TU            |
    ACK sent |                  |                     |
-resp. to TU |  1xx             V                     |
-            |  1xx to TU  -----------+               |
+     resp.  |  1xx             V                     |
+     to TU  |  1xx to TU  -----------+               |
             |  +---------|           |               |
             |  |         |Proceeding |-------------->|
             |  +-------->|           | 2xx           |
@@ -52,5 +52,4 @@ resp. to TU |  1xx             V                     |
                          +-----------+
 
                  Figure 5: INVITE client transaction
-
 
