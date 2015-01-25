@@ -14,7 +14,16 @@ The fsm about SIP transaction:
 
 
 
-                               NVITE from TU
+
+
+
+    
+    
+    
+    
+    
+    
+                               |INVITE from TU
              Timer A fires     |INVITE sent
              Reset A,          V                      Timer B fires
              INVITE sent +-----------+                or Transport Err.
@@ -25,9 +34,9 @@ The fsm about SIP transaction:
                             |  |       2xx to TU     |
                             |  |1xx                  |
     300-699 +---------------+  |1xx to TU            |
-   ACK sent |                  |                     |
-     resp.  |  1xx             V                     |
-     to TU  |  1xx to TU  -----------+               |
+    ACK sent |                 |                     |
+    resp. to TU |  1xx         V                     |
+            |  1xx to TU  -----------+               |
             |  +---------|           |               |
             |  |         |Proceeding |-------------->|
             |  +-------->|           | 2xx           |
@@ -54,4 +63,5 @@ The fsm about SIP transaction:
                          +-----------+
 
                  Figure 5: INVITE client transaction
+
 
