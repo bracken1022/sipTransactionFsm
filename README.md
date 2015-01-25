@@ -12,7 +12,9 @@ Just use class as ict fsm.
 
 The fsm about SIP transaction:
 
-NVITE from TU
+
+
+                               NVITE from TU
              Timer A fires     |INVITE sent
              Reset A,          V                      Timer B fires
              INVITE sent +-----------+                or Transport Err.
